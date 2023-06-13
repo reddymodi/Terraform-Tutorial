@@ -1,5 +1,7 @@
 resource "aws_instance" "web1" {
-   ami           = var.ami_id
-   instance_type = "t2.micro"
-   region = var.region
+   ami               = var.ami
+   instance_type     = var.instance_type
+   availability_zone = var.availability_zone
+   key_name          = var.key_name
+
  }
